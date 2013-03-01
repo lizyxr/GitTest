@@ -1,0 +1,47 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://app.ontraport.com/#!/contact/listAll"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/table/thead/tr/th[1]"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "1000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Export Contacts"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "1000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div[2]/div/div/div[1]/button[2]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[3]/div[1]/div[4]/button[1]"
+      }
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://app.ontraport.com/#!/contact/listAll"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/table/tbody/tr/td[2]/span/a"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "2000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "SEQUENCES AND TAGS"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div[3]/div/div[2]/div[1]/div/div/div/div/div[1]/div/div/button"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div[3]/div/div[2]/div[1]/div/div/div/div/div[1]/div/div/div/*/*/*/*/*[.='test']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div[3]/div/div[2]/div[1]/div/div/div/div/div[1]/div/div/button"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div[3]/div/div[2]/div[1]/div/div/div/div/div[1]/div/div/*/*/*/*/*/*[.='SMS']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div[3]/div/div[2]/div[1]/div/div/div/div/div[2]/ul/li/a/span"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[3]/div/div[1]"
+      }
+    }
+  ]
+}

@@ -1,0 +1,274 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://app.ontraport.com/#!/contact/listAll"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ontraport_panel_action_new']/span[2]"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div[1]/div[1]/div[3]/div[1]/div/div[1]/div/div/input"
+      },
+      "text": "testName"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div[1]/div[1]/div[3]/div[1]/div/div[2]/div/div/input"
+      },
+      "text": "testSurname"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div[1]/div[1]/div[3]/div[1]/div/div[3]/div/div/input"
+      },
+      "text": "testEmail@testEmail.com"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[3]/div[1]/div[4]/button[1]"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "5000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ontraport_panel_action_group_edit']/span[2]"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div/ul/div/div/div[1]/span/div/div/input"
+      },
+      "text": "test"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div/ul/div/div/div[4]/div[2]/div/div[1]/div/div[2]/div[2]/div[1]/table/tbody/tr/td[1]/span/div/div/button"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div/ul/div/div/div[4]/div[2]/div/div[1]/div/div[2]/div[2]/div[1]/table/tbody/tr/td[1]/span/div/div/*/*/*/*/*/*/*[.='First Name']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div/ul/div/div/div[4]/div[2]/div/div[1]/div/div[2]/div[2]/div[1]/table/tbody/tr/td[2]/span/div/div/button"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div/ul/div/div/div[4]/div[2]/div/div[1]/div/div[2]/div[2]/div[1]/table/tbody/tr/td[2]/span/div/div/*/*/*/*/*/*[. = 'contains']"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div/ul/div/div/div[4]/div[2]/div/div[1]/div/div[2]/div[2]/div[1]/table/tbody/tr/td[3]/span[1]/div/div/input"
+      },
+      "text": "testName"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div/ul/div/div/div[3]/span/div/div/button"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div/ul/div/div/div[3]/span/div/div/div/*/*/*/*/*[.='Everyone can view']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div/ul/div/div/div[5]/div[1]/button[1]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/table/tbody/tr/td[2]/span/a"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ontraport_panel_action_personal_actions']/span[2]"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "5000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Send E-Mail"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div/ul/div/div[2]/div/div/button"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div/ul/div/div[2]/div/div/*/*/*/*/*/*[.='test name']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div/ul/div/div[5]/div[1]/span"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "5000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "CONTACT LOG"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "5000"
+    },
+    {
+      "type": "assertTextPresent",
+      "text": "test name"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ontraport_panel_action_personal_actions']/span[2]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Delete"
+      }
+    },
+    {
+      "type": "assertTextPresent",
+      "text": "Are you sure you want to delete this contact?"
+    },
+    {
+      "type": "pause",
+      "waitTime": "1000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "html/body/*/div/div[4]/button[1]"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "5000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Contacts"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "2000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[1]/div[2]/div/div[2]/div/button"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "2000"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[1]/div[2]/div/div[2]/div/*/*/*/*/*/*[.='test']"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "1000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ontraport_panel_action_group_edit']/span[2]"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "1000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div/ul/div/div/div[5]/div[2]/button"
+      }
+    }
+  ]
+}

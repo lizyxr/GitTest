@@ -1,0 +1,282 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://app.ontraport.com/#!/contact/listAll"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ontraport_panel_action_new']/span[2]"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div[1]/div[1]/div[3]/div[1]/div/div[1]/div/div/input"
+      },
+      "text": "testFirstname"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div[1]/div[1]/div[3]/div[1]/div/div[2]/div/div/input"
+      },
+      "text": "testSurname"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div[1]/div[1]/div[3]/div[1]/div/div[3]/div/div/input"
+      },
+      "text": "testemail@test.com"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[3]/div[1]/div[4]/button[1]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/table/tbody/tr[1]/td[2]/span/a"
+      }
+    },
+    {
+      "type": "waitForTextPresent",
+      "text": "CONTACT INFORMATION"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ontraport_panel_action_personal_actions']/span[2]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div/ul/li[8]/a"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "1000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div[1]/ul/div/div[1]/div[2]/div[2]/div/div/div[1]/table/tbody/tr/td/div/input"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "5000"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div[1]/ul/div/div[1]/div[2]/div[2]/div/div/div[1]/table/tbody/tr/td/div/div/*/*/*[. = 'test']"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div[1]/ul/div/div[1]/div[2]/div[2]/div/div/div[1]/table/tbody/*/td[2]/input"
+      },
+      "text": "3"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='tax']/*[.='yes']"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div[1]/ul/div/div[1]/div[2]/div[2]/div/div/div[2]/table/tbody/tr[3]/td[1]/*/*/*/*/*[.='CA Tax']"
+      }
+    },
+    {
+      "type": "sendKeysToElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div[1]/ul/div/div[1]/div[2]/div[2]/div/div/div[1]/table/tbody/tr/td[3]/input"
+      },
+      "text": "1"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div[1]/ul/div/div[1]/div[2]/div[2]/div/div/div[2]/table/tbody/tr[2]/td[2]/div/input"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "5000"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div[1]/ul/div/div[1]/div[2]/div[2]/div/div[1]/div[2]/table/tbody/tr[2]/td[2]/div/*/*/*/*[.='Free']"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div[1]/ul/div/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[2]/div/div/input"
+      },
+      "text": "test"
+    },
+    {
+      "type": "pause",
+      "waitTime": "3000"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div[1]/ul/div/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[4]/div/div/input"
+      },
+      "text": "testcity"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div[1]/ul/div/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[5]/div/div/input"
+      },
+      "text": "teststate"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div[1]/ul/div/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[6]/div/div/input"
+      },
+      "text": "testzip"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div[1]/ul/div/div[1]/div[4]/div[1]/div[1]/div[2]/div[1]/div[7]/div/div/input"
+      },
+      "text": "testcountry"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div[1]/ul/div/div[1]/div[4]/div[1]/div[1]/div[2]/div[2]/div[2]/div/div/input"
+      },
+      "text": "1111222233334444"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div[1]/ul/div/div[1]/div[4]/div[1]/div[1]/div[2]/div[2]/div[3]/div/div/input"
+      },
+      "text": "123"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div[1]/ul/div/div[1]/div[4]/div[1]/div[1]/div[2]/div[2]/div[4]/div/div/div[1]/div/div/button"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div[1]/ul/div/div[1]/div[4]/div[1]/div[1]/div[2]/div[2]/div[4]/div/div/div[1]/div/div/div/*/*/*/*/*[.='12']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div[1]/ul/div/div[1]/div[4]/div[1]/div[1]/div[2]/div[2]/div[4]/div/div/div[2]/div/div/button"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div[1]/ul/div/div[1]/div[4]/div[1]/div[1]/div[2]/div[2]/div[4]/div/div/div[2]/div/div/div/*/*/*/*/*[.='2015']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div[1]/ul/div/div[1]/div[4]/div[2]/div/div/button"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div[1]/ul/div/div[1]/div[4]/div[2]/div/div/div/*/*/*/*/*[.='Invoice 1']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div[1]/ul/div/div[1]/div[4]/div[3]/div/div/button"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div[1]/ul/div/div[1]/div[4]/div[3]/div/div/div/*/*/*/*/*[.='Paypal']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[2]/div[1]/ul/div/div[2]/input[2]"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "1000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "PURCHASE HISTORY"
+      }
+    },
+    {
+      "type": "assertTextPresent",
+      "text": "test"
+    }
+  ]
+}
